@@ -1,11 +1,10 @@
-package com.example.capstonedesign
+package com.example.shared_calendar
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import com.example.capstonedesign.auth.IntroActivity
-import com.example.shared_calendar.R
+import com.example.shared_calendar.auth.IntroActivity
 import com.google.firebase.auth.FirebaseAuth
 
 class SplashActivity : AppCompatActivity() {
