@@ -13,20 +13,23 @@
         android:theme="@style/Theme.Shared_Calendar"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.capstonedesign.MainActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".auth.JoinActivity"
+            android:name="com.example.capstonedesign.auth.IntroActivity"
             android:exported="false" />
         <activity
-            android:name=".auth.IntroActivity"
+            android:name="com.example.capstonedesign.auth.JoinActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashActivity"
+            android:name="com.example.capstonedesign.auth.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.capstonedesign.SplashActivity"
             android:exported="true">
             <meta-data
                 android:name="android.app.lib_name"

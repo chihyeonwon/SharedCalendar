@@ -1,4 +1,4 @@
-package com.example.capstonedesign.auth
+package com.example.shared_calendar.auth
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
