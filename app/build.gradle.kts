@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.shared_calendar"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.shared_calendar"
         minSdk = 24
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
