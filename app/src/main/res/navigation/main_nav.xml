@@ -9,5 +9,90 @@
         android:id="@+id/calendarFragment"
         android:name="com.example.shared_calendar.fragments.CalendarFragment"
         android:label="fragment_calendar"
-        tools:layout="@layout/fragment_calendar" />
+        tools:layout="@layout/fragment_calendar" >
+        <action
+            android:id="@+id/action_calendarFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_calendarFragment_to_memoFragment"
+            app:destination="@id/memoFragment" />
+        <action
+            android:id="@+id/action_calendarFragment_to_notifyFragment"
+            app:destination="@id/notifyFragment" />
+        <action
+            android:id="@+id/action_calendarFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.example.shared_calendar.fragments.addFragment"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/action_addFragment_to_notifyFragment"
+            app:destination="@id/notifyFragment" />
+        <action
+            android:id="@+id/action_addFragment_to_calendarFragment"
+            app:destination="@id/calendarFragment" />
+        <action
+            android:id="@+id/action_addFragment_to_memoFragment"
+            app:destination="@id/memoFragment" />
+        <action
+            android:id="@+id/action_addFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/memoFragment"
+        android:name="com.example.shared_calendar.fragments.memoFragment"
+        android:label="fragment_memo"
+        tools:layout="@layout/fragment_memo" >
+        <action
+            android:id="@+id/action_memoFragment_to_calendarFragment"
+            app:destination="@id/calendarFragment" />
+        <action
+            android:id="@+id/action_memoFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_memoFragment_to_notifyFragment"
+            app:destination="@id/notifyFragment" />
+        <action
+            android:id="@+id/action_memoFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notifyFragment"
+        android:name="com.example.shared_calendar.fragments.notifyFragment"
+        android:label="fragment_notify"
+        tools:layout="@layout/fragment_notify" >
+        <action
+            android:id="@+id/action_notifyFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_notifyFragment_to_settingFragment"
+            app:destination="@id/settingFragment" />
+        <action
+            android:id="@+id/action_notifyFragment_to_memoFragment"
+            app:destination="@id/memoFragment" />
+        <action
+            android:id="@+id/action_notifyFragment_to_calendarFragment"
+            app:destination="@id/calendarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.shared_calendar.fragments.settingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" >
+        <action
+            android:id="@+id/action_settingFragment_to_notifyFragment"
+            app:destination="@id/notifyFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_memoFragment"
+            app:destination="@id/memoFragment" />
+        <action
+            android:id="@+id/action_settingFragment_to_calendarFragment"
+            app:destination="@id/calendarFragment" />
+    </fragment>
 </navigation>

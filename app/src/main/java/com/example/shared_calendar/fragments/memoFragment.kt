@@ -8,33 +8,32 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import com.example.shared_calendar.R
-import com.example.shared_calendar.databinding.FragmentCalendarBinding
+import com.example.shared_calendar.databinding.FragmentMemoBinding
 
-class CalendarFragment : Fragment() {
+class memoFragment : Fragment() {
 
-    private lateinit var binding:FragmentCalendarBinding
-
+    private lateinit var binding: FragmentMemoBinding
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
 
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_calendar, container, false)
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_memo, container, false)
 
         binding.addTap.setOnClickListener {
-            it.findNavController().navigate(R.id.action_calendarFragment_to_addFragment)
+            it.findNavController().navigate(R.id.action_memoFragment_to_addFragment)
         }
 
         binding.notifyTap.setOnClickListener {
-            it.findNavController().navigate(R.id.action_calendarFragment_to_notifyFragment)
+            it.findNavController().navigate(R.id.action_memoFragment_to_notifyFragment)
         }
 
-        binding.memoTap.setOnClickListener {
+        binding.calendarTap.setOnClickListener {
             it.findNavController().navigate(R.id.action_calendarFragment_to_memoFragment)
         }
 
         binding.settingTap.setOnClickListener {
-            it.findNavController().navigate(R.id.action_calendarFragment_to_settingFragment)
+            it.findNavController().navigate(R.id.action_memoFragment_to_settingFragment)
         }
 
         return binding.root
