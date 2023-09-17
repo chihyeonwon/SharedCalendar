@@ -29,7 +29,7 @@ class memoFragment : Fragment() {
         }
 
         binding.calendarTap.setOnClickListener {
-            it.findNavController().navigate(R.id.action_calendarFragment_to_memoFragment)
+            it.findNavController().navigate(R.id.action_memoFragment_to_calendarFragment)
         }
 
         binding.settingTap.setOnClickListener {

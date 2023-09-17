@@ -10,7 +10,7 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context=".fragments.HomeFragment">
+            tools:context=".fragments.addFragment">
 
             <!-- TODO: Update blank fragment layout -->
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -55,9 +55,8 @@
                 <LinearLayout
                     android:id="@+id/linearLayout"
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
+                    android:layout_height="80dp"
                     android:background="@color/white"
-                    android:weightSum="5"
                     app:layout_constraintBottom_toBottomOf="parent">
 
                     <ImageView
@@ -65,6 +64,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:layout_margin="20dp"
                         android:src="@drawable/calendar" />
 
                     <ImageView
@@ -72,6 +72,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:layout_margin="20dp"
                         android:src="@drawable/memo" />
 
                     <ImageView
@@ -79,6 +80,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:layout_margin="20dp"
                         android:src="@drawable/add" />
 
                     <ImageView
@@ -86,6 +88,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:layout_margin="20dp"
                         android:src="@drawable/notify" />
 
                     <ImageView
@@ -93,6 +96,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
+                        android:layout_margin="20dp"
                         android:src="@drawable/setting" />
 
                 </LinearLayout>
